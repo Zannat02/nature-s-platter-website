@@ -38,20 +38,20 @@
     <script src="https://kit.fontawesome.com/27bf3bb960.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="font-sora  ">
+<body class="font-sora overflow-x-hidden ">
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] space-y-24 ">
         <div class="flex justify-around pt-6 pb-6">
             <div>
                 <img src="c2-assets/logo-header.png" alt="">
             </div>
-            <div class="flex items-center ">
+            <div class="hidden sm:flex items-center ">
                 <ul class="flex ml-32 ">
                     <li><a class="primary-font-size mx-8 primary-color" href="">Home</a></li>
                     <li><a class="primary-font-size mx-8 primary-color" href="">Product</a></li>
                     <li><a class="primary-font-size mx-8 primary-color" href="">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="">
+            <div class="hidden sm:flex items-center">
                 <i class="fa-solid fa-magnifying-glass text-2xl mr-2.5 text-[#000000]"></i>
                 <i class="fa-solid fa-cart-shopping text-2xl mr-2.5 text-[#000000]"></i>
                 <button
@@ -59,11 +59,16 @@
                 <button class="primary-font-size rounded-lg bg-[#179800] text-white py-3 px-8 mr-2.5">Register</button>
             </div>
 
+             <!-- Mobile Menu Icon -->
+             <div class="sm:hidden">
+                <i class="fa-solid fa-bars text-3xl primary-color"></i>
+             </div>
+
         </div>
 
         <!-- banner -->
-        <section class=" sm:text-center">
-            <h1 class=" sm:3xl lg:text-5xl font-semibold text-center">Freshness <span class="text-[#179800]">You Can
+        <section class=" ">
+            <h1 class=" text-5xl font-semibold text-center">Freshness <span class="text-[#179800]">You Can
                     <br>
                     Count</span> On, Prices You’ll Love!</h1>
             <p class=" primary-color text-center primary-font-size my-8 ">Shop your daily essentials at unbeatable
@@ -90,9 +95,7 @@
                     </div>
 
                     <h4 class="font-semibold text-2xl primary-color mt-6 ">Healthy Products </h4>
-                    <p class="primary-font-size primary-color font-light mx-8 mb-11 mt-3">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p class="primary-font-size primary-color font-light mx-8 mb-11 mt-3">We are dedicated to serving you 24/7, ensuring assistance whenever you need it. With our reliable and round-the-clock support, we strive to provide you with the best experience possible.</p>
 
                 </div>
                 <!-- 2nd -->
@@ -102,9 +105,7 @@
                     </div>
 
                     <h4 class="font-semibold text-2xl primary-color mt-6 ">Healthy Products </h4>
-                    <p class="primary-font-size primary-color font-light mx-8 mb-11 mt-3">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p class="primary-font-size primary-color font-light mx-8 mb-11 mt-3">Our goal is to deliver your orders in the shortest possible time. We ensure fast and accurate delivery to meet your needs efficiently and effectively.</p>
 
                 </div>
                 <!-- 3rd card -->
@@ -114,9 +115,7 @@
                     </div>
 
                     <h4 class="font-semibold text-2xl primary-color mt-6 ">Healthy Products </h4>
-                    <p class="primary-font-size primary-color font-light mx-8 mb-11 mt-3">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p class="primary-font-size primary-color font-light mx-8 mb-11 mt-3">We are committed to offering eco-friendly products that contribute to a sustainable future. Our 100% safe and natural products are designed to protect both your health and the environment.</p>
 
                 </div>
             </div>
@@ -127,7 +126,7 @@
             <section class="max-w-screen-xl  mx-auto">
                 <h2 class="font-semibold text-4xl text-[#179800] pt-36 my-12">Popular Products</h2>
 
-                <div class="flex gap-5 pb-36 ">
+                <div class="lg:flex gap-5 pb-36  ">
                     <!-- 1st -->
                     <div class=" relative rounded-xl bg-gradient-to-tl from-green-200 to-green-700  ">
                         <div class="px-4 py-9">
@@ -144,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-3 grid-rows-3  gap-3 
+                    <div class="lg:grid lg:grid-cols-3   sm:grid sm:grid-cols-2  gap-3 
                      ">
                         <!-- 2nd -->
                         <div class="flex bg-white border-2  gap-4 py-5 rounded-lg">
@@ -325,7 +324,7 @@
         <section class="max-w-screen-xl  mx-auto mt-36">
             <h2 class="font-semibold text-4xl text-[#179800]  my-12">Bakery </h2>
 
-            <div class="grid grid-cols-3 gap-5 mt-11">
+            <div class="grid  lg:grid-cols-3 sm:grid-cols-1  gap-5 mt-11">
                 <!-- 1st card -->
                 <div class="card primary-bg shadow-xl rounded-lg">
                     <figure class="px-6 pt-6">
@@ -379,10 +378,10 @@
 
 
         <!-- offer section  -->
-        <section class="max-w-screen-xl  mx-auto">
+        <section class="max-w-screen-xl  mx-auto ">
             <h2 class="font-semibold text-4xl text-[#179800] pt-36">Arrival & Offers</h2>
 
-            <div class="flex gap-5 mt-11 justify-between">
+            <div class="lg:flex lg:gap-5 mt-11 lg:justify-between sm:grid sm:grid-cols-1 ">
                 <!-- 1st card -->
                 <div class="flex bg-[#115414] rounded-3xl justify-around flex-1  ">
                     <div class="space-y-8 pl-4 mt-12">
@@ -411,8 +410,8 @@
         </section>
 
         <!-- news section -->
-        <section class="max-w-screen-xl  mx-auto primary-bg  rounded-3xl relative top-60 ">
-            <div class="flex justify-around pt-12">
+        <section class="max-w-screen-xl  mx-auto primary-bg  rounded-3xl relative top-56 ">
+            <div class="lg:flex lg:justify-around pt-12 sm:grid sm:grid-cols-1 sm:justify-center">
                 <div class="pb-11">
                     <img src="c2-assets/vegetable-busket.png" alt="">
                 </div>
@@ -437,20 +436,20 @@
     <!-- footer -->
 
     <footer class="bg-[#179800] text-white ">
-        <div class=" max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 space-x-8 pt-80 pb-10">
+        <div class=" max-w-screen-xl mx-auto px-4 grid sm:grid-cols-1 md:grid-cols-3  pt-80 pb-10">
             <!-- Logo and Description -->
-            <div>
+            
                 <div>
                     <img src="c2-assets/logo-footer.png" alt="">
                     <p class="text-sm mt-2">
                         Discover a world of treats, toys, and essentials handpicked for your furry friends.
                     </p>
                 </div>
-            </div>
+            
 
             <!-- Links -->
-           <div>
-            <div class=" text-center ">
+           
+            <div class=" lg:text-center  sm:text-start">
                 <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
                     <li><a href="#" class="hover:underline">Product</a></li>
@@ -458,13 +457,13 @@
                     <li><a href="#" class="hover:underline">Contact us</a></li>
                 </ul>
             </div>
-           </div>
+           
 
 
 
             <!-- Social Media -->
-            <div class="flex justify-end">
-                <div class=" text-end flex flex-col justify-end  ">
+            <div class="flex lg:justify-end sm:justify-start">
+                <div class=" lg:text-end flex flex-col justify-end  sm:text-start">
                     <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
                     <div class="flex space-x-4 justify-end ">
                         <a href="#" class="hover:text-gray-200"><i class="fab fa-facebook fa-lg"></i></a>
